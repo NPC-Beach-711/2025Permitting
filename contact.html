@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Gas–Electric Coordination Study – NPC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO -->
+  <meta name="description" content="Contact information for the National Petroleum Council regarding the Gas–Electric Coordination Study, NPC publications, and website feedback." />
+  <link rel="canonical" href="https://example.com/contact.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact – Gas–Electric Coordination Study – NPC" />
+  <meta property="og:description" content="Contact information for the National Petroleum Council regarding the Gas–Electric Coordination Study, NPC publications, and website feedback." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/contact.html" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSM4ZEH1X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7BSM4ZEH1X');
+  </script>
+
+  <style>
+    .static-page { padding: 2rem 0 3rem; }
+    .static-page h1 { color: var(--primary-color); }
+    .static-page h2 { margin-top: 1.5rem; color: var(--primary-color); }
+    .static-page p, .static-page ul { font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- HEADER -->
+    <header id="home">
+      <div class="container header-inner">
+<a href="index.html" class="logo-wrap home-link">
+  <img src="NPC_Logo.png" alt="National Petroleum Council (NPC) logo" class="logo-img" />
+  <div class="site-title">National Petroleum Council</div>
+</a>
+
+        <nav aria-label="Main navigation" class="main-nav">
+          <a href="index.html#home">Home</a>
+          <a
+            href="NPC_Gas-Electric_Coordination_Draft_Report.pdf"
+            target="_blank"
+            onclick="trackEvent('view_pdf', 'Nav', 'Full Report')"
+          >
+            Full Report
+          </a>
+          <a
+            href="index.html#presentations"
+            onclick="trackEvent('nav_click', 'Nav', 'Presentations Section')"
+          >
+            Presentations
+          </a>
+          <a href="index.html#about-npc">About NPC</a>
+        </nav>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/company/national-petroleum-council/"
+            class="social-link"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            in
+          </a>
+
+          <a
+            href="https://www.youtube.com/@NationalPetroleumCouncil"
+            class="social-link social-link--yt"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            ▶
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="container static-page">
+        <h1>Contact</h1>
+
+        <p>
+          For questions regarding the Gas–Electric Coordination Study, National Petroleum Council
+          publications, or this website, you may contact:
+        </p>
+
+        <p>
+          <strong>National Petroleum Council</strong><br />
+          Washington, DC<br />
+          Email:
+          <a href="mailto:info@npc.org">info@npc.org</a>
+        </p>
+
+        <h2>Media &amp; Public Inquiries</h2>
+        <p>
+          Please include your name, organization, and a brief description of your request. NPC staff
+          will respond as appropriate based on the nature of the inquiry.
+        </p>
+
+        <h2>Website Feedback</h2>
+        <p>
+          If you encounter broken links, accessibility issues, or have suggestions to improve this
+          microsite, please include “Website Feedback” in the subject line of your email.
+        </p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+<footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          &copy; 2025 ·
+          <a href="https://www.npc.org" target="_blank" rel="noopener">
+            National Petroleum Council
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Simple GA event helper -->
+  <script>
+    function trackEvent(action, category, label) {
+      if (typeof gtag === 'function') {
+        gtag('event', action, {
+          event_category: category,
+          event_label: label
+        });
+      }
+    }
+  </script>
+</body>
+</html>
