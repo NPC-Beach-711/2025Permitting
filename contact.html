@@ -36,55 +36,46 @@
 <body>
   <div class="page-wrap">
 
-    <!-- HEADER -->
-    <header id="home">
-      <div class="container header-inner">
-<a href="index.html" class="logo-wrap home-link">
-  <img src="NPC_Logo.png" alt="National Petroleum Council (NPC) logo" class="logo-img" />
-  <div class="site-title">National Petroleum Council</div>
-</a>
-
-        <nav aria-label="Main navigation" class="main-nav">
-          <a href="index.html#home">Home</a>
-          <a
-            href="NPC_Gas-Electric_Coordination_Draft_Report.pdf"
-            target="_blank"
-            onclick="trackEvent('view_pdf', 'Nav', 'Full Report')"
-          >
-            Full Report
-          </a>
-          <a
-            href="index.html#presentations"
-            onclick="trackEvent('nav_click', 'Nav', 'Presentations Section')"
-          >
-            Presentations
-          </a>
-          <a href="index.html#about-npc">About NPC</a>
-        </nav>
-
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com/company/national-petroleum-council/"
-            class="social-link"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            in
-          </a>
-
-          <a
-            href="https://www.youtube.com/@NationalPetroleumCouncil"
-            class="social-link social-link--yt"
-            target="_blank"
-            rel="noopener"
-            aria-label="YouTube"
-          >
-            ▶
-          </a>
-        </div>
+ <!-- Site Header -->
+  <header id="home" class="site-header">
+    <div class="container header-inner">
+      <div class="logo-block">
+        <a href="#home" class="logo-link">
+          <img src="NPC_Logo.png" alt="National Petroleum Council logo" class="logo-img" />
+          <span class="logo-text">National Petroleum Council</span>
+        </a>
       </div>
-    </header>
+
+<nav class="main-nav" aria-label="Main navigation">
+  <a href="index.html#home">Home</a>
+  <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report</a>
+  <a href="index.html#presentations">Presentations</a>
+  <a href="index.html#about-npc">About NPC</a>
+</nav>
+
+      <div class="header-social">
+  <a
+    href="https://www.linkedin.com/company/national-petroleum-council/"
+    target="_blank"
+    rel="noopener"
+    aria-label="NPC on LinkedIn"
+    class="header-social-link"
+  >
+    in
+  </a>
+
+  <a
+    href="https://www.youtube.com/@NationalPetroleumCouncil"
+    target="_blank"
+    rel="noopener"
+    aria-label="NPC on YouTube"
+    class="header-social-link"
+  >
+    ▶
+  </a>
+</div>
+    </div>
+  </header>
 
     <!-- MAIN -->
     <main>
@@ -119,22 +110,21 @@
 
     <!-- FOOTER -->
 <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          &copy; 2025 ·
-          <a href="https://www.npc.org" target="_blank" rel="noopener">
-            National Petroleum Council
-          </a>
-        </div>
-        <div class="footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms of Use</a>
-        </div>
-      </div>
-    </footer>
-
+  <div class="container footer-inner">
+    <div>
+      &copy; 2025 ·
+      <a href="https://www.npc.org" target="_blank" rel="noopener">
+        National Petroleum Council
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
   </div>
+</footer>
+
 
   <!-- Simple GA event helper -->
   <script>

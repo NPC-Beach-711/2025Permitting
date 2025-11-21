@@ -108,6 +108,7 @@ body {
 .header-social {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .header-social-link {
@@ -362,6 +363,21 @@ main p {
   color: var(--npc-navy);
 }
 
+/* Footer Spaceing */
+.footer-links {
+  display: flex;
+  gap: 16px;        /* space between Contact / Privacy / Terms */
+  font-size: 13px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--npc-muted);
+}
+
+.footer-links a:hover {
+  color: var(--npc-navy);
+}
 /* Responsive */
 
 @media (max-width: 992px) {
@@ -405,4 +421,64 @@ main p {
   .hero-subtitle {
     font-size: 16px;
   }
+}
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* Presentations Page Styling */
+
+.intro-text {
+  font-size: 16px;
+  color: var(--npc-text);
+  margin-bottom: 24px;
+}
+
+.presentation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.presentation-card {
+  background: #fff;
+  border: 1px solid var(--npc-border);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.presentation-title {
+  margin: 0 0 12px;
+  color: var(--npc-navy-dark);
+  font-size: 20px;
+}
+
+.presentation-links {
+  list-style: none;
+  margin: 0;
+  padding-left: 12px;      /* slight indentation */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presentation-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--npc-navy);
+  padding-left: 4px;
+}
+
+.presentation-links li a:hover {
+  text-decoration: underline;
 }
