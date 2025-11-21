@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="stylesheet" href="style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19BL772JEX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-19BL772JEX');
+  </script>
+
 </head>
 <body>
 
@@ -13,40 +23,55 @@
   <header id="home" class="site-header">
     <div class="container header-inner">
       <div class="logo-block">
-        <a href="#home" class="logo-link">
+        <a href="#home" class="logo-link"
+           data-ga-track="true" data-ga-category="nav" data-ga-label="Logo – Home">
           <img src="NPC_Logo.png" alt="National Petroleum Council logo" class="logo-img" />
           <span class="logo-text">National Petroleum Council</span>
         </a>
       </div>
 
-<nav class="main-nav" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report</a>
-  <a href="presentations.html">Presentations</a>
-  <a href="index.html#about-npc">About NPC</a>
-</nav>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html"
+           data-ga-track="true" data-ga-category="nav" data-ga-label="Home">
+          Home
+        </a>
+        <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener"
+           data-ga-track="true" data-ga-category="pdf" data-ga-label="Full Report (nav)">
+          Full Report
+        </a>
+        <a href="presentations.html"
+           data-ga-track="true" data-ga-category="nav" data-ga-label="Presentations">
+          Presentations
+        </a>
+        <a href="index.html#about-npc"
+           data-ga-track="true" data-ga-category="nav" data-ga-label="About NPC (nav)">
+          About NPC
+        </a>
+      </nav>
 
       <div class="header-social">
-  <a
-    href="https://www.linkedin.com/company/national-petroleum-council/"
-    target="_blank"
-    rel="noopener"
-    aria-label="NPC on LinkedIn"
-    class="header-social-link"
-  >
-    in
-  </a>
+        <a
+          href="https://www.linkedin.com/company/national-petroleum-council/"
+          target="_blank"
+          rel="noopener"
+          aria-label="NPC on LinkedIn"
+          class="header-social-link"
+          data-ga-track="true" data-ga-category="social" data-ga-label="LinkedIn (header)"
+        >
+          in
+        </a>
 
-  <a
-    href="https://www.youtube.com/@NationalPetroleumCouncil"
-    target="_blank"
-    rel="noopener"
-    aria-label="NPC on YouTube"
-    class="header-social-link"
-  >
-    ▶
-  </a>
-</div>
+        <a
+          href="https://www.youtube.com/@NationalPetroleumCouncil"
+          target="_blank"
+          rel="noopener"
+          aria-label="NPC on YouTube"
+          class="header-social-link"
+          data-ga-track="true" data-ga-category="social" data-ga-label="YouTube (header)"
+        >
+          ▶
+        </a>
+      </div>
     </div>
   </header>
 
@@ -56,17 +81,18 @@
       <div class="container hero-grid">
 
         <!-- LEFT: Cover image -->
-<div class="hero-cover">
-  <div class="cover-card">
-    <a href="permitting_cover_large.jpg" target="_blank" rel="noopener">
-      <img
-        src="permitting_cover.jpg"
-        alt="Project Permitting Innovation study cover"
-        class="cover-img"
-      />
-    </a>
-  </div>
-</div>
+        <div class="hero-cover">
+          <div class="cover-card">
+            <a href="permitting_cover_large.jpg" target="_blank" rel="noopener"
+               data-ga-track="true" data-ga-category="image" data-ga-label="Cover image – large">
+              <img
+                src="permitting_cover.jpg"
+                alt="Project Permitting Innovation study cover"
+                class="cover-img"
+              />
+            </a>
+          </div>
+        </div>
 
         <!-- MIDDLE: Main text -->
         <div class="hero-main">
@@ -82,6 +108,7 @@
               class="btn btn-primary"
               target="_blank"
               rel="noopener"
+              data-ga-track="true" data-ga-category="pdf" data-ga-label="View Report (hero button)"
             >
               View Report
             </a>
@@ -90,6 +117,7 @@
               class="btn btn-secondary"
               target="_blank"
               rel="noopener"
+              data-ga-track="true" data-ga-category="external" data-ga-label="Amazon – printed copy"
             >
               Buy Printed Copy (Coming Soon)
             </a>
@@ -101,6 +129,7 @@
               href="#"
               class="share-link"
               aria-label="Share on LinkedIn"
+              data-ga-track="true" data-ga-category="share" data-ga-label="Share – LinkedIn"
             >
               in
             </a>
@@ -108,6 +137,7 @@
               href="#"
               class="share-link"
               aria-label="Share on X"
+              data-ga-track="true" data-ga-category="share" data-ga-label="Share – X"
             >
               X
             </a>
@@ -115,6 +145,7 @@
               href="#"
               class="share-link"
               aria-label="Share on Facebook"
+              data-ga-track="true" data-ga-category="share" data-ga-label="Share – Facebook"
             >
               f
             </a>
@@ -122,12 +153,12 @@
               href="#"
               class="share-link"
               aria-label="Share by email"
+              data-ga-track="true" data-ga-category="share" data-ga-label="Share – Email"
             >
               ✉
             </a>
           </div>
 
-          
         </div>
 
         <!-- RIGHT: Sidebar -->
@@ -137,13 +168,22 @@
             <ul class="sidebar-list">
 
               <li>
-                <a href="permitting_fact_sheet.pdf" target="_blank" rel="noopener">Permitting Study Fact Sheet</a>
+                <a href="permitting_fact_sheet.pdf" target="_blank" rel="noopener"
+                   data-ga-track="true" data-ga-category="pdf" data-ga-label="Permitting Study Fact Sheet">
+                  Permitting Study Fact Sheet
+                </a>
               </li>
               <li>
-                <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report (PDF)</a>
+                <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener"
+                   data-ga-track="true" data-ga-category="pdf" data-ga-label="Full Report (sidebar)">
+                  Full Report (PDF)
+                </a>
               </li>
               <li>
-                <a href="GE_Perm_Req_Ltr.pdf" target="_blank" rel="noopener">Study Request Letter</a>
+                <a href="GE_Perm_Req_Ltr.pdf" target="_blank" rel="noopener"
+                   data-ga-track="true" data-ga-category="pdf" data-ga-label="Study Request Letter">
+                  Study Request Letter
+                </a>
               </li>
             </ul>
           </div>
@@ -154,7 +194,10 @@
               A high-level briefing of the study’s scope, major findings, and recommendations.
             </p>
             <p>
-              <a href="#" class="sidebar-link">Watch NPC Annual Meeting live stream</a>
+              <a href="#" class="sidebar-link"
+                 data-ga-track="true" data-ga-category="video" data-ga-label="Watch NPC Annual Meeting live stream">
+                Watch NPC Annual Meeting live stream
+              </a>
             </p>
           </div>
         </aside>
@@ -224,21 +267,49 @@ Council members, about 200 in number, are appointed by the Energy Secretary to a
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      &copy; 2025 ·
-      <a href="https://www.npc.org" target="_blank" rel="noopener">
-        National Petroleum Council
-      </a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; 2025 ·
+        <a href="https://www.npc.org" target="_blank" rel="noopener"
+           data-ga-track="true" data-ga-category="external" data-ga-label="NPC website">
+          National Petroleum Council
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="contact.html"
+           data-ga-track="true" data-ga-category="footer" data-ga-label="Contact">
+          Contact
+        </a>
+        <a href="privacy.html"
+           data-ga-track="true" data-ga-category="footer" data-ga-label="Privacy">
+          Privacy
+        </a>
+        <a href="terms.html"
+           data-ga-track="true" data-ga-category="footer" data-ga-label="Terms of Use">
+          Terms of Use
+        </a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms of Use</a>
-    </div>
-  </div>
-</footer>
+  </footer>
+
+  <!-- GA4 click tracking -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = document.querySelectorAll('a[data-ga-track]');
+      links.forEach(function (a) {
+        a.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click', {
+              event_category: a.dataset.gaCategory || 'link',
+              event_label: a.dataset.gaLabel || a.href,
+              link_url: a.href
+            });
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
