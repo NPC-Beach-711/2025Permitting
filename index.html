@@ -4,56 +4,60 @@
   <meta charset="UTF-8" />
   <title>Project Permitting Innovation – National Petroleum Council</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Project Permitting Innovation: A Framework for Reforming Energy Infrastructure Approvals (2025) – National Petroleum Council." />
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
+  <!-- Site Header -->
+  <header id="home" class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="NPC_Logo.png" alt="National Petroleum Council logo" class="logo-img" />
-        <span class="logo-text">National Petroleum Council</span>
-      </a>
+      <div class="logo-block">
+        <a href="#home" class="logo-link">
+          <img src="NPC_Logo.png" alt="National Petroleum Council logo" class="logo-img" />
+          <span class="logo-text">National Petroleum Council</span>
+        </a>
+      </div>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
+        <a href="#home">Home</a>
         <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report</a>
         <a href="#presentations">Presentations</a>
         <a href="#about-npc">About NPC</a>
       </nav>
 
-      <a
-        href="https://www.linkedin.com/company/national-petroleum-council/"
-        target="_blank"
-        rel="noopener"
-        aria-label="NPC on LinkedIn"
-        class="header-social-link"
-      >
-        in
-      </a>
+      <div class="header-social">
+        <a
+          href="https://www.linkedin.com/company/national-petroleum-council/"
+          target="_blank"
+          rel="noopener"
+          aria-label="NPC on LinkedIn"
+          class="header-social-link"
+        >
+          in
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Main -->
+  <!-- Main Content -->
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <!-- Left: cover -->
-        <div class="hero-media">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- LEFT: Cover image -->
+        <div class="hero-cover">
           <div class="cover-card">
             <img
               src="permitting_cover.jpg"
               alt="Project Permitting Innovation study cover"
               class="cover-img"
             />
+            <button class="cover-link">VIEW LARGER COVER</button>
           </div>
         </div>
 
-        <!-- Middle: main text -->
+        <!-- MIDDLE: Main text -->
         <div class="hero-main">
-          <h1 class="hero-title">Project Permitting Innovation</h1>
+          <h1 class="hero-title">Project Permitting Innovation:</h1>
           <p class="hero-subtitle">
             A Framework for Reforming Energy Infrastructure Approvals
           </p>
@@ -66,168 +70,142 @@
               target="_blank"
               rel="noopener"
             >
-              View Report (PDF)
+              View Report
             </a>
             <a
-              href="Permitting_NPC_MTG.pdf"
+              href="https://www.npc.org"
               class="btn btn-secondary"
               target="_blank"
               rel="noopener"
             >
-              NPC Meeting Presentation
+              Buy Printed Copy
             </a>
           </div>
+
+          <div class="hero-share">
+            <span class="share-label">SHARE</span>
+            <a
+              href="#"
+              class="share-link"
+              aria-label="Share on LinkedIn"
+            >
+              in
+            </a>
+            <a
+              href="#"
+              class="share-link"
+              aria-label="Share on X"
+            >
+              X
+            </a>
+            <a
+              href="#"
+              class="share-link"
+              aria-label="Share on Facebook"
+            >
+              f
+            </a>
+            <a
+              href="#"
+              class="share-link"
+              aria-label="Share by email"
+            >
+              ✉
+            </a>
+          </div>
+
+          
         </div>
 
-        <!-- Right: key info -->
-        <aside class="hero-sidebar">
+        <!-- RIGHT: Sidebar -->
+        <aside class="hero-sidebar" aria-label="Study resources">
           <div class="sidebar-block">
-            <h3>Study Details</h3>
-            <dl class="meta-list">
-              <div class="meta-row">
-                <dt>Study:</dt>
-                <dd>Project Permitting Innovation</dd>
-              </div>
-              <div class="meta-row">
-                <dt>Subject:</dt>
-                <dd>Energy Infrastructure Permitting</dd>
-              </div>
-              <div class="meta-row">
-                <dt>Sponsor:</dt>
-                <dd>Secretary of Energy</dd>
-              </div>
-              <div class="meta-row">
-                <dt>Organization:</dt>
-                <dd>National Petroleum Council</dd>
-              </div>
-              <div class="meta-row">
-                <dt>Year:</dt>
-                <dd>2025</dd>
-              </div>
-            </dl>
+            <h3>Resources</h3>
+            <ul class="sidebar-list">
+              <li>
+                <a href="#" target="_blank" rel="noopener">Study Request Letter (PDF)</a>
+              </li>
+              <li>
+                <a href="#presentations">Presentations Page</a>
+              </li>
+              <li>
+                <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report (PDF)</a>
+              </li>
+            </ul>
           </div>
 
           <div class="sidebar-block">
-            <h3>Key Resources</h3>
-            <ul class="meta-list">
-              <li>
-                <a href="GE_Perm_Req_Ltr.pdf" target="_blank" rel="noopener">
-                  DOE Request Letter
-                </a>
-              </li>
-              <li>
-                <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">
-                  Full Report
-                </a>
-              </li>
-              <li>
-                <a href="Permitting_NPC_MTG.pdf" target="_blank" rel="noopener">
-                  NPC Meeting Presentation
-                </a>
-              </li>
-            </ul>
+            <h3>Featured Presentation</h3>
+            <p>
+              A high-level briefing of the study’s scope, major findings, and recommendations.
+            </p>
+            <p>
+              <a href="#" class="sidebar-link">Watch NPC Annual Meeting live stream</a>
+            </p>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Summary -->
-    <section class="section">
-      <div class="container summary-grid">
-        <div>
-          <h2>Modernizing U.S. Energy Infrastructure Permitting</h2>
-          <p>
-            <strong>Project Permitting Innovation: A Framework for Reforming Energy Infrastructure Approvals</strong>
-            provides practical recommendations to modernize how energy infrastructure is reviewed, authorized, and built in the United States.
-          </p>
-          <p>
-            The study responds to a request from the U.S. Secretary of Energy to identify policy, regulatory,
-            and process improvements that can accelerate deployment of energy infrastructure while maintaining
-            strong environmental stewardship and community engagement.
-          </p>
-        </div>
-        <div class="summary-box">
-          <h3>At a Glance</h3>
-          <ul class="summary-list">
-            <li>Streamlines overlapping federal, state, and local reviews.</li>
-            <li>Improves transparency and predictability for project sponsors.</li>
-            <li>Supports timely deployment of critical energy infrastructure.</li>
-            <li>Retains strong environmental protections and community input.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key themes -->
-    <section class="section">
+    <!-- About this Report – full text -->
+    <section class="section-padding section-border-top">
       <div class="container">
-        <h2>Key Themes</h2>
-        <div class="card-grid">
-          <article class="info-card">
-            <h3>A System Under Strain</h3>
-            <p>
-              Existing permitting processes struggle with the scale and complexity of today’s energy transition,
-              contributing to delays and uncertainty for needed infrastructure.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Clarity and Coordination</h3>
-            <p>
-              Clear roles, coordinated schedules, and early issue resolution can accelerate reviews without
-              weakening environmental standards.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Data, Tools, and Capacity</h3>
-            <p>
-              Modern digital tools, reliable data, and adequately resourced agencies are essential for consistent,
-              timely decisions.
-            </p>
-          </article>
-          <article class="info-card">
-            <h3>Community Engagement</h3>
-            <p>
-              Early, meaningful engagement with communities strengthens projects and builds trust while advancing
-              national energy objectives.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About NPC -->
-    <section id="about-npc" class="section">
-      <div class="container">
-        <h2>About the National Petroleum Council</h2>
+        <h2>About this Report</h2>
         <p>
-          The National Petroleum Council (NPC) is a federal advisory committee established to advise the U.S.
-          Secretary of Energy on matters related to oil, natural gas, and other energy issues.
+          Project Permitting Innovation: A Framework for Reforming Energy Infrastructure
+          Approvals outlines a critical call to action for modernizing the United States’
+          outdated and fragmented energy infrastructure permitting system. The report
+          highlights how surging energy demand—driven by electrification, AI and data center
+          expansion, and LNG exports—is outpacing the country’s ability to build essential
+          pipelines, power plants, and storage facilities.
         </p>
         <p>
-          NPC studies draw on expertise from industry, academia, non-governmental organizations, and other
-          stakeholders. The Council’s role is advisory; it does not set policy or advocate for specific outcomes.
+          Between 2010 and 2022, natural gas demand rose by 56%, but pipeline and storage
+          capacity grew far more slowly, creating bottlenecks that threaten economic growth,
+          national security, and global competitiveness. The current permitting process—
+          bogged down by lengthy reviews, litigation risks, and overlapping regulations—is
+          failing to keep up, leading to higher costs, supply insecurity, and missed
+          opportunities in the global energy and technology race.
         </p>
         <p>
-          For more information, visit:
-          <a href="https://www.npc.org" target="_blank" rel="noopener">www.npc.org</a>.
+          To address these challenges, the report proposes a two-pronged approach:
+          immediate reforms to streamline existing processes—such as clarifying NEPA reviews
+          and reducing procedural delays—and the development of a new, standardized
+          permitting framework for qualified projects. This “Qualified Infrastructure
+          Authorizations” system would accelerate approvals for projects that meet
+          pre-determined environmental and safety standards, while maintaining robust
+          oversight.
+        </p>
+        <p>
+          The goal is to balance speed, predictability, and environmental protection,
+          ensuring the U.S. can build the infrastructure needed to power its economy, secure
+          its energy future, and maintain its leadership in a rapidly evolving global
+          landscape.
         </p>
       </div>
     </section>
 
     <!-- Presentations -->
-    <section id="presentations" class="section">
+    <section id="presentations" class="section-padding">
       <div class="container">
         <h2>Presentations</h2>
         <p>
-          This section provides access to briefings and presentation materials related to the study.
+          Links to briefing decks, webinar recordings, and NPC meeting presentations can be
+          listed here.
         </p>
-        <ul class="summary-list">
-          <li>
-            <a href="Permitting_NPC_MTG.pdf" target="_blank" rel="noopener">
-              NPC Meeting Presentation: Project Permitting Innovation (PDF)
-            </a>
-          </li>
-        </ul>
+      </div>
+    </section>
+
+    <!-- About NPC -->
+    <section id="about-npc" class="section-padding section-border-top">
+      <div class="container">
+        <h2>About the National Petroleum Council</h2>
+        <p>
+          The National Petroleum Council (NPC) is a federal advisory committee to the U.S.
+          Secretary of Energy. The Council provides advice, information, and recommendations
+          on matters related to oil and natural gas, including emerging energy technologies,
+          infrastructure, and policy issues.
+        </p>
       </div>
     </section>
   </main>
@@ -236,12 +214,14 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="footer-copy">
-        &copy; 2025
-        <a href="https://www.npc.org" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-          National Petroleum Council
-        </a>.
-        All rights reserved.
+        &copy; 2025 National Petroleum Council. All rights reserved.
       </p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="contact.html">Contact</a>
-        <a href="privacy.
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
