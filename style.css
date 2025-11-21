@@ -137,7 +137,15 @@ main p {
 .static-page {
   padding: 40px 0;
 }
-
+/* Cover ------------------------------------------ */
+.cover-card {
+  max-width: 260px !important;
+}
+.cover-img {
+  width: 100% !important;
+  height: auto;
+  display: block;
+}
 /* Footer ------------------------------------------ */
 .site-footer {
   border-top: 1px solid var(--npc-border);
