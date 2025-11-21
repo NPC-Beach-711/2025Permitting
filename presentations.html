@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="style.css" />
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSM4ZEH1X"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19BL772JEX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-7BSM4ZEH1X');
+    gtag('config', 'G-19BL772JEX');
   </script>
 </head>
 <body>
@@ -32,17 +32,30 @@
     <header id="home" class="site-header">
       <div class="container header-inner">
         <div class="logo-block">
-          <a href="index.html" class="logo-link">
+          <a href="index.html" class="logo-link"
+             data-ga-track="true" data-ga-category="nav" data-ga-label="Logo – Home">
             <img src="NPC_Logo.png" alt="National Petroleum Council logo" class="logo-img" />
             <span class="logo-text">National Petroleum Council</span>
           </a>
         </div>
 
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener">Full Report</a>
-          <a href="presentations.html">Presentations</a>
-          <a href="index.html#about-npc">About NPC</a>
+          <a href="index.html"
+             data-ga-track="true" data-ga-category="nav" data-ga-label="Home (nav)">
+            Home
+          </a>
+          <a href="Permitting_2025_Report.pdf" target="_blank" rel="noopener"
+             data-ga-track="true" data-ga-category="pdf" data-ga-label="Full Report (nav)">
+            Full Report
+          </a>
+          <a href="presentations.html"
+             data-ga-track="true" data-ga-category="nav" data-ga-label="Presentations (nav)">
+            Presentations
+          </a>
+          <a href="index.html#about-npc"
+             data-ga-track="true" data-ga-category="nav" data-ga-label="About NPC (nav)">
+            About NPC
+          </a>
         </nav>
 
         <div class="header-social">
@@ -52,6 +65,7 @@
             rel="noopener"
             aria-label="NPC on LinkedIn"
             class="header-social-link"
+            data-ga-track="true" data-ga-category="social" data-ga-label="LinkedIn (header)"
           >
             in
           </a>
@@ -62,6 +76,7 @@
             rel="noopener"
             aria-label="NPC on YouTube"
             class="header-social-link"
+            data-ga-track="true" data-ga-category="social" data-ga-label="YouTube (header)"
           >
             ▶
           </a>
@@ -72,6 +87,7 @@
     <!-- MAIN CONTENT -->
     <main>
       <div class="container">
+
         <!-- PAGE TITLE -->
 <section class="section-card">
   <h1>Permitting Study Presentations</h1>
@@ -90,12 +106,14 @@
 
     <ul class="presentation-links">
       <li>
-        <a href="NPC_Permitting_Study_Presentation_Dec2025.pdf" target="_blank" rel="noopener">
+        <a href="NPC_Permitting_Study_Presentation_Dec2025.pdf" target="_blank" rel="noopener"
+           data-ga-track="true" data-ga-category="pdf" data-ga-label="Dec 2025 Presentation PDF">
           View the Presentation (PDF)
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/watch?v=CnNdYBlI41c" target="_blank" rel="noopener">
+        <a href="https://www.youtube.com/watch?v=CnNdYBlI41c" target="_blank" rel="noopener"
+           data-ga-track="true" data-ga-category="video" data-ga-label="Dec 2025 Livestream YouTube">
           Watch the Livestream (YouTube)
         </a>
       </li>
@@ -112,17 +130,45 @@
       <div class="container footer-inner">
         <div>
           &copy; 2025 ·
-          <a href="https://www.npc.org" target="_blank" rel="noopener">
+          <a href="https://www.npc.org" target="_blank" rel="noopener"
+             data-ga-track="true" data-ga-category="external" data-ga-label="NPC website">
             National Petroleum Council
           </a>
         </div>
         <div class="footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms of Use</a>
+          <a href="contact.html"
+             data-ga-track="true" data-ga-category="footer" data-ga-label="Contact (footer)">
+            Contact
+          </a>
+          <a href="privacy.html"
+             data-ga-track="true" data-ga-category="footer" data-ga-label="Privacy (footer)">
+            Privacy
+          </a>
+          <a href="terms.html"
+             data-ga-track="true" data-ga-category="footer" data-ga-label="Terms of Use (footer)">
+            Terms of Use
+          </a>
         </div>
       </div>
     </footer>
   </div>
+
+  <!-- GA4 click tracking -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a[data-ga-track]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          if (typeof gtag === "function") {
+            gtag("event", "click", {
+              event_category: a.dataset.gaCategory || "link",
+              event_label: a.dataset.gaLabel || a.href,
+              link_url: a.href
+            });
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
